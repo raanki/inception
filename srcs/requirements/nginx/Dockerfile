@@ -1,4 +1,4 @@
-FROM debian:bookworm
+FROM debian:bullseye
 
 # mettre à jour les paquets => -y pourrépondre automatique oui si ya des majs
 RUN apt-get update -y 
