@@ -1,11 +1,20 @@
 [server]
 [mysqld]
+# Utilisateur mysql, basik
 user                    = mysql
+# Fichier PID pr le processus
 pid-file                = /var/run/mysqld/mysqld.pid
+# Chemin pr le socket mysql
 socket                  = /var/run/mysqld/mysqld.sock
+# Le port par defaut
 port                    = 3306
+# Base dir du mysql
 basedir                 = /usr
+# La ou y'a les datas
 datadir                 = /var/lib/mysql
+# Fichier tmp va ici
 tmpdir                  = /tmp
+# Messages d'erreurs et tout, c'est ici
 lc-messages-dir         = /usr/share/mysql
+# Ecoute sur toutes les IPs, pr le reseau
 bind-address            = 0.0.0.0
