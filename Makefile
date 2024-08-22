@@ -14,8 +14,9 @@ re:
 clean: down
 	@docker system prune -a
 
-fclean: down
-	@docker stop $$(docker ps -qa)
-	@docker system prune --all --force --volumes
+fclean: clean
+	@sudo rm -rf /home/ranki/data/mariadb/*
+	@sudo rm -rf /home/ranki/data/wordpress/*
+	@docker system prune -af
 
 .PHONY	: all build down re clean fclean
