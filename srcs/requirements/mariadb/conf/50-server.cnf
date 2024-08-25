@@ -1,6 +1,6 @@
 [server]
 [mysqld]
-# Utilisateur mysql, basik
+# Utilisateur mysql
 user                    = mysql
 # Fichier PID pr le processus
 pid-file                = /var/run/mysqld/mysqld.pid
@@ -14,7 +14,7 @@ basedir                 = /usr
 datadir                 = /var/lib/mysql
 # Fichier tmp va ici
 tmpdir                  = /tmp
-# Messages d'erreurs et tout, c'est ici
+# Messages d'erreurs
 lc-messages-dir         = /usr/share/mysql
 # Ecoute sur toutes les IPs, pr le reseau
 bind-address            = 0.0.0.0
